@@ -1,0 +1,52 @@
+<html>
+<head>
+  <style>
+    header{
+
+    }
+    body{
+      min-height: 1000px;
+      min-width: 1000px;
+      margin: 0px;
+    /*  height:600px;*/
+    /*  font-family: "Lucida Grande", Helvetica, Arial, sans-serif;*/
+    /*  padding:10px;*/
+    }
+  </style>
+  <link href="popup.css" rel="stylesheet" type="text/css">
+</head>
+<body>
+<div class="header">
+  <h1 class="container">Collect, Connect and Reflect your Learning - My LearningDiary</h1>
+  <button id="btnSend" class="container">Save</button>
+  <button>Go to Detailview</button>
+</div>
+
+
+<div class="container">
+  <hr class="solid">
+  <h2 id="titleWebsite"></h2>
+  <h2 id="notices">Notices:</h2>
+  <div>
+    <textarea id="textArea" name="paragraph_text" placeholder="On this website I learned ..." cols="50" rows="10"></textarea>
+  </div>
+  <div>
+    <h2>Tags</h2>
+    <p>Seperate by ','</p>
+  </div>
+  <p id="suggestions"></p>
+  <input id="tagInput" type="text">
+  <button id="getSuggestion">Suggestions</button>
+  <br>
+  <hr class="solid">
+  <div>
+    <h2>Highlights:</h2>
+    <button id="btnClear">Clear</button>
+  </div>
+  <div id="item-list">
+  </div>
+
+</div>
+<script src="popup.js"></script>
+</body>
+</html>
