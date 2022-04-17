@@ -57,7 +57,7 @@ btnSend.onclick = function () {
         url: url,
         title: title,
         tags: tagInput.value.split(","),
-        learningDiary: textAreaField.value,
+        notes: textAreaField.value,
         highlights: highlights
     }
     /*
@@ -72,7 +72,6 @@ btnSend.onclick = function () {
 chrome.tabs.query({'active': true, 'lastFocusedWindow': true}, function (tabs) {
     url = tabs[0].url;
     title = tabs[0].title;
-    a
     titleWebsite.innerHTML = "Title: " + title;
 });
 
@@ -81,9 +80,9 @@ chrome.tabs.query({'active': true, 'lastFocusedWindow': true}, function (tabs) {
 document.addEventListener('DOMContentLoaded', function () {
     chrome.storage.local.get('NOTES', (data) => {
         if (data.NOTES) {
-            // TODO FIX HIGHLIGHTS
-            highlights = data.NOTES;
             let notices = JSON.parse(data.NOTES)
+            highlights = notices;
+            console.log(typeof(highlights))
             if (notices != null) {
                 console.log(notices);
                 notices.forEach(notice => {
