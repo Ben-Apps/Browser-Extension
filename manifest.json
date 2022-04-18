@@ -1,6 +1,6 @@
 {
-  "name": "Knowledge Flow",
-  "description": "Collect, Connect and Reflect",
+  "name": "KnowledgeTagger",
+  "description": "Collect, Connect and Tag",
   "version": "1.0",
   "manifest_version": 3,
   "background": {

@@ -65,7 +65,7 @@ btnSend.onclick = function () {
      */
     chrome.runtime.sendMessage({name: "SAVE", notice: notice,}, (response) => {
     });
-
+    window.location.reload();
 }
 
 // Get the URL of the current TAB
