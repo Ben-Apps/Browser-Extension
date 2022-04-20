@@ -1,8 +1,8 @@
-#Introduction
+# Introduction
 
 The browser extension helps to get data from resources by collecting notes, highlights and tags.
 
-##Functions:
+## Functions:
 1. Right click: "Take as Note" --> Save highlighted text
 2. Get suggestions --> Get example Tags 
 3. Save data and send it to the backend
