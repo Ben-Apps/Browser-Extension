@@ -8,7 +8,7 @@ The browser extension helps to get data from resources by collecting notes, high
 3. Save data and send it to the backend
 4. Clear --> Clear data from local storage
 
-
+# Installing
 
 Load an unpacked extension
 The directory holding the manifest file can be added as an extension in developer mode in its current state. To load an unpacked extension in developer mode, follow these steps:
